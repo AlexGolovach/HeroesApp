@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">HeroesApp</string>
+    <string name="zombie">Zombie</string>
+    <string name="goblin">Goblin</string>
+    <string name="fighter">Fighter</string>
+    <string name="dancer">Dancer</string>
+    <string name="idle">Idle</string>
+    <string name="action">Action</string>
+</resources>

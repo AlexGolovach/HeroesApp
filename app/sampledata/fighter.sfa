@@ -1,0 +1,92 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Character|Flying kick',
+        },
+        {
+          name: 'Character|Idle',
+        },
+        {
+          name: 'Character|Kick',
+        },
+      ],
+      path: 'sampledata/fighter.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Arissa_MAT',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'Arissa_DIFF_diffuse',
+        },
+        {
+          normalMap: 'Arissa_NM_normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/fighter.fbx',
+    name: 'fighter',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata\\fighter.fbm\\Arissa_DIFF_diffuse.png',
+      name: 'Arissa_DIFF_diffuse',
+      pipeline_name: 'fighter.fbm\\Arissa_DIFF_diffuse.png',
+    },
+    {
+      file: 'sampledata\\fighter.fbm\\Arissa_SPEC_specular.png',
+      name: 'Arissa_SPEC_specular',
+      pipeline_name: 'fighter.fbm\\Arissa_SPEC_specular.png',
+    },
+    {
+      file: 'sampledata\\fighter.fbm\\Arissa_NM_normal.png',
+      name: 'Arissa_NM_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'fighter.fbm\\Arissa_NM_normal.png',
+    },
+  ],
+  version: '0.54:2',
+}

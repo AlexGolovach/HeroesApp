@@ -1,0 +1,249 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Character|Breakdance',
+        },
+        {
+          name: 'Character|Idle',
+        },
+        {
+          name: 'Character|Wave',
+        },
+      ],
+      path: 'sampledata/dancer.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'FitGrandma_Brows_MAT1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'FitnessGrandma_FaceAnimMap',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'FitGrandma_Eyes_MAT1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'FitnessGrandma_FaceAnimMap',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Grandma_MAT',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'FitnessGrandma_diffuse',
+        },
+        {
+          normalMap: 'FitnessGrandma_normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'Lens_MAT',
+      parameters: [
+        {
+          baseColor: [
+            0,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: null,
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'FitGrandma_Mouth_MAT1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'FitnessGrandma_FaceAnimMap',
+        },
+        {
+          normalMap: null,
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/dancer.fbx',
+    name: 'dancer',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata\\dancer.fbm\\FitnessGrandma_FaceAnimMap.png',
+      name: 'FitnessGrandma_FaceAnimMap',
+      pipeline_name: 'dancer.fbm\\FitnessGrandma_FaceAnimMap.png',
+    },
+    {
+      file: 'sampledata\\dancer.fbm\\FitnessGrandma_diffuse.jpg',
+      name: 'FitnessGrandma_diffuse',
+      pipeline_name: 'dancer.fbm\\FitnessGrandma_diffuse.jpg',
+    },
+    {
+      file: 'sampledata\\dancer.fbm\\FitnessGrandma_normal.jpg',
+      name: 'FitnessGrandma_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'dancer.fbm\\FitnessGrandma_normal.jpg',
+    },
+    {
+      file: 'sampledata\\dancer.fbm\\FitnessGrandma_spec.jpg',
+      name: 'FitnessGrandma_spec',
+      pipeline_name: 'dancer.fbm\\FitnessGrandma_spec.jpg',
+    },
+  ],
+  version: '0.54:2',
+}

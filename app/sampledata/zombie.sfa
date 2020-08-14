@@ -1,0 +1,89 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Zombie|Idle',
+        },
+        {
+          name: 'Zombie|Walk',
+        },
+      ],
+      path: 'sampledata/zombie.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'Prisoner_material',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'prisoner_diffuse',
+        },
+        {
+          normalMap: 'prisoner_normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/zombie.fbx',
+    name: 'zombie',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata\\zombie.fbm\\prisoner_diffuse.png',
+      name: 'prisoner_diffuse',
+      pipeline_name: 'zombie.fbm\\prisoner_diffuse.png',
+    },
+    {
+      file: 'sampledata\\zombie.fbm\\prisoner_normal.png',
+      name: 'prisoner_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'zombie.fbm\\prisoner_normal.png',
+    },
+    {
+      file: 'sampledata\\zombie.fbm\\prisoner_specular.png',
+      name: 'prisoner_specular',
+      pipeline_name: 'zombie.fbm\\prisoner_specular.png',
+    },
+  ],
+  version: '0.54:2',
+}

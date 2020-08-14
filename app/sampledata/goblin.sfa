@@ -1,0 +1,133 @@
+{
+  animations: [
+    {
+      clips: [
+        {
+          name: 'Character|Flying Kick',
+        },
+        {
+          name: 'Character|Idle',
+        },
+        {
+          name: 'Character|Jab',
+        },
+        {
+          name: 'Goblin|Idle',
+        },
+      ],
+      path: 'sampledata/goblin.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'eyes:eyes_lambert',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'goblin_diffuse',
+        },
+        {
+          normalMap: 'goblin_normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+    {
+      name: 'phong1',
+      parameters: [
+        {
+          baseColor: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          baseColorMap: 'goblin_diffuse',
+        },
+        {
+          normalMap: 'goblin_normal',
+        },
+        {
+          interpolatedColor: null,
+        },
+        {
+          metallic: 0,
+        },
+        {
+          metallicMap: null,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          roughnessMap: null,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/fbx_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/goblin.fbx',
+    name: 'goblin',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata\\goblin.fbm\\goblin_diffuse.png',
+      name: 'goblin_diffuse',
+      pipeline_name: 'goblin.fbm\\goblin_diffuse.png',
+    },
+    {
+      file: 'sampledata\\goblin.fbm\\goblin_normal.png',
+      name: 'goblin_normal',
+      params: {
+        usage_type: 'Normal',
+      },
+      pipeline_name: 'goblin.fbm\\goblin_normal.png',
+    },
+    {
+      file: 'sampledata\\goblin.fbm\\goblin_specular.png',
+      name: 'goblin_specular',
+      pipeline_name: 'goblin.fbm\\goblin_specular.png',
+    },
+  ],
+  version: '0.54:2',
+}
